@@ -1,0 +1,22 @@
+name: baumvergleich
+description: Find tree care companies (Baumpflege, Baumfällung) in German cities with prices, ratings, and contact info. Query 2000+ companies from Baumvergleich.de.
+icon: 🌳
+author: faellungbaum-sudo
+repository: https://github.com/faellungbaum-sudo/mcp-baumvergleich
+license: MIT
+tags:
+  - germany
+  - tree-care
+  - baumpflege
+  - directory
+  - local-business
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties: {}
+  commandFunction: |-
+    (config) => ({
+      command: "python",
+      args: ["server.py"]
+    })
