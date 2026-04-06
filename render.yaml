@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mcp-baumvergleich
+    runtime: docker
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
