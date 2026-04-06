@@ -11,12 +11,8 @@ tags:
   - directory
   - local-business
 startCommand:
-  type: stdio
+  type: sse
   configSchema:
     type: object
     properties: {}
-  commandFunction: |-
-    (config) => ({
-      command: "python",
-      args: ["server.py"]
-    })
+  url: https://mcp-baumvergleich.onrender.com/sse
